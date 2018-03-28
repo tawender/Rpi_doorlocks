@@ -1,0 +1,17 @@
+# This is a listing of holidays for the automatic door lock to ignore.
+# The door lock should keep the doors locked if a holiday falls on a weekday.
+# All dates should be entered in the format: YYYY-MM-DD
+
+
+2018-01-01 #new year's day
+2018-05-28 #memorial day
+2018-07-02 #monday before 4th
+2018-07-03 #tuesday before 4th
+2018-07-04 #4th of July(wednesday)
+2018-09-03 #labor day
+2018-11-22 #thanksgiving
+2018-11-23 #friday after thanksgiving
+2018-12-24 #christmas eve(monday)
+2018-12-25 #christmas day(tuesday)
+2018-12-31 #new year's eve(monday)
+2019-01-01 #new year's day(tuesday)

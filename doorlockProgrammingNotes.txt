@@ -1,0 +1,14 @@
+Programming Notes
+
+The door locks are controlled both by the time of day reported by the raspberry pi and the wall mounted keypad outside the front door.
+
+Each weekday at the beginning of normal business hours(time set in the cron table entry) the cron table will run the doorsUnlocked.py script. This script checks the date against the list of holidays. If the current date is not on the list of holidays the doors will be unlocked. The same check will happen at the end of normal business hours(also set in the cron table) when the doorsLocked.py script will be run to lock the doors again.
+There is another program running in the background called keypadInterrupt.py that will monitor the GPIO line connected to the keypad for a low-going transition. The digital low will unlock the doors for a short duration(around 10sec) and then lock them again. This script is running all the time in the background. It is executed on a reboot using the following method:
+	-change keypadInterrupt.py file permissions to make executable
+	-edit the file: /home/pi/.config/lxsession/LXDE-pi/autostart
+	 append this line: @sudo /usr/bin/python /home/pi/Documents/css/RpiDoorLock/keypadInterrupt.py
+
+
+added to the crontab for normal business hour lock/unlock: 
+00 08 * * 1-5 /usr/bin/python /home/pi/Documents/css/RpiDoorLock/doorsUnlocked.py
+00 17 * * 1-5 /usr/bin/python /home/pi/Documents/css/RpiDoorLock/doorsLocked.py
