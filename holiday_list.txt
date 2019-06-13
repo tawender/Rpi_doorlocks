@@ -3,15 +3,14 @@
 # All dates should be entered in the format: YYYY-MM-DD
 
 
-2018-01-01 #new year's day
-2018-05-28 #memorial day
-2018-07-02 #monday before 4th
-2018-07-03 #tuesday before 4th
-2018-07-04 #4th of July(wednesday)
-2018-09-03 #labor day
-2018-11-22 #thanksgiving
-2018-11-23 #friday after thanksgiving
-2018-12-24 #christmas eve(monday)
-2018-12-25 #christmas day(tuesday)
-2018-12-31 #new year's eve(monday)
-2019-01-01 #new year's day(tuesday)
+2019-01-01 #new year's day
+2019-05-27 #memorial day
+2019-07-04 #4th of July(thursday)
+2019-07-05 #friday after 4th
+2019-09-02 #labor day
+2019-11-28 #thanksgiving
+2019-11-29 #friday after thanksgiving
+2019-12-24 #christmas eve(tuesday)
+2019-12-25 #christmas day(wednesday)
+2019-12-31 #new year's eve(tuesday)
+2020-01-01 #new year's day(wednesday)
